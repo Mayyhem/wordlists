@@ -3,3 +3,6 @@ soap/
 rest/
 swagger/
 xml/
+graphql/
+graphiql/
+graphql.php
