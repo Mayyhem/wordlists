@@ -25,6 +25,7 @@
 .mdb
 .nsf
 .old
+.pdf
 .php
 .phtml
 .pl
