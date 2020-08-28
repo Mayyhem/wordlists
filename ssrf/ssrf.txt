@@ -3,6 +3,11 @@
 # https://gist.githubusercontent.com/jhaddix/78cece26c91c6263653f31ba453e273b/raw/a4869d58a5ce337d1465c2d1b29777b9eecd371f/cloud_metadata.txt
 # https://github.com/cujanovic/SSRF-Testing/blob/master/ip.py
 
+# Local files
+/etc/passwd
+/boot.ini
+/Windows/win.ini
+
 # Connect to local host
 127.0.0.1
 localhost

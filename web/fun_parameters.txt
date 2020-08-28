@@ -1,0 +1,5 @@
+loggedIn=True
+isAuthenticated=True
+debug=True
+format=xml
+format=json

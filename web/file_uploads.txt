@@ -1,0 +1,7 @@
+upload
+uploadFile
+file
+uploadImage
+editProfile
+profile
+account

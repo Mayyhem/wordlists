@@ -1,5 +1,7 @@
 ### MySQL Valid Queries in SELECT WHERE String Injection ###
 ### Note that SQL -- comments must be followed by a whitespace character and then any character
+admin
+ad'+||+'min
 ''
 ';
 ';-- -
