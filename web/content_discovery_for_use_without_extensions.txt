@@ -1615,6 +1615,8 @@ actualite
 actualites
 actualiza
 actualizar
+actuator
+actuator/env
 acw
 ad
 ad1
