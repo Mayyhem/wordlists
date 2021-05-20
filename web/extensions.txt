@@ -37,7 +37,9 @@ src
 tar.gz
 tmp
 txt
+wadl
+wsdl
 xml
-yml
 yaml
+yml
 zip
